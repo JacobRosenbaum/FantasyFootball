@@ -17,12 +17,11 @@ function getSchedule() {
         success: function(response, textStatus) {
             console.log(response);
             console.log("SUCCESS")
-                // var gameTime = response.games[i].schedule.startTime
+
             for (i = 0; i < response.games.length; i++) {
                 var starttime = response.games[i].schedule.startTime;
                 starttime = moment(starttime).format("llll");
                 $(".start").append("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " " + " " + " ........................  " + starttime + "</p>");
-                // $(".away-team").prepend("<p>" + response.games[i].schedule.awayTeam.abbreviation + "</p>");
             }
 
         },
@@ -34,5 +33,7 @@ function getSchedule() {
 
 var toggle = $("#go");
 toggle.on("click", function() {
+    $(".start").empty();
     getSchedule();
+
 });

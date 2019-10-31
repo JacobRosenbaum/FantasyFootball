@@ -22,8 +22,8 @@ $("#select-player").on("click", function() {
                 $(".name").html("<h3>" + response.players[i].name + "</h3>");
                 $(".position").html("<h3>" + "Position: " + response.players[i].position + "</h3>");
                 $(".team").html("<h3>" + "Team: " + response.players[i].teamAbbr + "</h3>");
-                $(".weekly-projected").html("<h3>" + "Weekly Projected Points: " + response.players[i].weekProjectedPts + "</h3>");
-                $(".season-projected").html("<h3>" + "Season Projected Points: " + response.players[i].seasonProjectedPts + "</h3>");
+                $(".weekly-projected").html("<h3>" + "Projected Points this Week: " + response.players[i].weekProjectedPts + "</h3>");
+                $(".season-projected").html("<h3>" + "Projected Points this Season: " + response.players[i].seasonProjectedPts + "</h3>");
                 $(".season-points").html("<h3>" + "Points Scored this Season: " + response.players[i].seasonPts + "</h3>");
             }
         }
