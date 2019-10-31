@@ -1,0 +1,169 @@
+body {
+    background: url("../images/field.jpg");
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+}
+
+.form {
+    text-align: center;
+}
+
+.nav {
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#jumbo1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: linen;
+}
+
+#jumbo2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: linen;
+    font-family: 'Sunflower', sans-serif;
+}
+
+#jumbo3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: linen;
+}
+
+#select-player {
+    font-family: 'Sunflower', sans-serif;
+    background-color: darkslategray;
+    color: white;
+}
+
+#player-search {
+    width: auto;
+}
+
+.qb {
+    border-bottom: 1px solid;
+}
+
+.rb {
+    border-bottom: 1px solid;
+}
+
+.wr {
+    border-bottom: 1px solid;
+}
+
+.te {
+    border-bottom: 1px solid;
+}
+
+.k {
+    border-bottom: 1px solid;
+}
+
+.def {
+    border-bottom: 1px solid;
+}
+
+@media (max-width: 414px) {
+    #jumbo1 {
+        width: 380px;
+    }
+    #jumbo2 {
+        width: 380px;
+    }
+    #jumbo3 {
+        width: 380px;
+    }
+}
+
+@media (max-width: 375px) {
+    #jumbo1 {
+        width: 340px;
+    }
+    #jumbo2 {
+        width: 340px;
+    }
+    #jumbo3 {
+        width: 340px;
+    }
+}
+
+@media (max-width: 360px) {
+    #jumbo1 {
+        width: 325px;
+    }
+    #jumbo2 {
+        width: 325px;
+    }
+    #jumbo3 {
+        width: 325px;
+    }
+}
+
+@media (max-width: 320px) {
+    #jumbo1 {
+        width: 290px;
+    }
+    #jumbo2 {
+        width: 290px;
+    }
+    #jumbo3 {
+        width: 290px;
+    }
+}
+
+.form-control:hover {
+    cursor: pointer;
+}
+
+.one {
+    text-align: center;
+}
+
+#go {
+    margin-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Sunflower', sans-serif;
+    background-color: darkslategray;
+    color: white;
+}
+
+.start {
+    font-family: 'Sunflower', sans-serif;
+}
+
+.myAnimate {
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+.jumbotron {
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.titleZoom {
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fantasy Football Database</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        var hike = new Audio();
+        hike.src = "assets/audio/hike.mp3";
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h1 class="animated titleZoom zoomIn delay-1s">Fantasy Football Database
+                <i class="fas fa-football-ball"></i>
+            </h1>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="jumbotron animated bounceInDown delay-0s" id="jumbo1">
+                    <h2>
+                        <strong>Search Players</strong>
+                    </h2>
+                    <div class="form">
+                        <input id="player-search" placeholder="Enter player's name..." type="text">
+                        <button id="select-player" onmousedown="hike.play()" type="button" type="submit" value="Search">Search</button>
+                    </div>
+                    <div class="animated myAnimate slideInLeft delay-2s">
+                        <div class="name"></div>
+                        <div class="position"></div>
+                        <div class="team"></div>
+                        <div class="weekly-projected"></div>
+                        <div class="season-projected"></div>
+                        <div class="season-points"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="jumbotron animated bounceInDown delay-0s" id="jumbo2">
+                    <h2>
+                        <strong>This Week's Top Projected Players</strong>
+                    </h2>
+                    <h3>
+                        <strong>Quarterback</strong>
+                    </h3>
+                    <div class="qb"></div>
+                    <h3>
+                        <strong>Runningback</strong>
+                    </h3>
+                    <div class="rb"></div>
+                    <h3>
+                        <strong>Wide Receiver</strong>
+                    </h3>
+                    <div class="wr"></div>
+                    <h3>
+                        <strong>Tight End</strong>
+                    </h3>
+                    <div class="te"></div>
+                    <h3>
+                        <strong>Kicker</strong>
+                    </h3>
+                    <div class="k"></div>
+                    <h3>
+                        <strong>Defense</strong>
+                    </h3>
+                    <div class="def"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="jumbotron animated bounceInDown delay-0s" id="jumbo3">
+                    <h2>
+                        NFL Schedule</h2>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <select class="form-control" id="weeks">
+                                    <option class="one" value="1">Week 1</option>
+                                    <option class="one" value="2">Week 2</option>
+                                    <option class="one" value="3">Week 3</option>
+                                    <option class="one" value="4">Week 4</option>
+                                    <option class="one" value="5">Week 5</option>
+                                    <option class="one" value="6">Week 6</option>
+                                    <option class="one" value="7">Week 7</option>
+                                    <option class="one" value="8">Week 8</option>
+                                    <option class="one" value="9">Week 9</option>
+                                    <option class="one" value="10">Week 10</option>
+                                    <option class="one" value="11">Week 11</option>
+                                    <option class="one" value="12">Week 12</option>
+                                    <option class="one" value="13">Week 13</option>
+                                    <option class="one" value="14">Week 14</option>
+                                    <option class="one" value="15">Week 15</option>
+                                    <option class="one" value="16">Week 16</option>
+                                    <option class="one" value="17">Week 17</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <button id="go" type="button" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="schedule"></ul>
+                    <div class="start"></div>
+                    <div class="away-team"></div>
+                    <div class="home-team"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/projection.js"></script>
+        <script src="assets/javascript/schedule.js"></script>
+        <script src="assets/javascript/searchcolumn.js"></script>
+    </div>
+
+    <!--Container-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/projection.js"></script>
+    <script src="assets/javascript/schedule.js"></script>
+    <script src="searchcolumn.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+
+</html>
