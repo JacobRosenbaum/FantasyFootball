@@ -14,14 +14,13 @@ function getSchedule() {
             "Authorization": "Basic " + btoa("272d68e4-cc86-4387-8a1e-35c762" + ":" + "MYSPORTSFEEDS")
         },
         timeout: 2000,
-        success: function(response, textStatus) {
+        success: function(response) {
             console.log(response);
             console.log("SUCCESS")
-
             for (i = 0; i < response.games.length; i++) {
                 var starttime = response.games[i].schedule.startTime;
                 starttime = moment(starttime).format("llll");
-                $(".start").append("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " " + " " + " ........................  " + starttime + "</p>");
+                $(".start").append("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " ........... " + starttime + "</p>");
             }
 
         },

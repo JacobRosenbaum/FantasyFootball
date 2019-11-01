@@ -30,13 +30,14 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="jumbotron animated bounceInDown delay-0s" id="jumbo1">
-                    <h2>
-                        <strong>Search Players</strong>
-                    </h2>
+
+                    <h2><strong>Search Players</strong></h2>
+
                     <div class="form">
                         <input id="player-search" placeholder="Enter player's name..." type="text">
-                        <button id="select-player" onmousedown="hike.play()" type="button" type="submit" value="Search">Search</button>
+                        <button id="select-player" onmousedown="hike.play()" type="button" value="Search">Search</button>
                     </div>
+
                     <div class="animated myAnimate slideInLeft delay-2s">
                         <div class="name"></div>
                         <div class="position"></div>
@@ -47,44 +48,38 @@
 
                     </div>
                 </div>
-            </div>
+            </div> <!--Jumbotron 1-->
 
             <div class="col-sm-4">
                 <div class="jumbotron animated bounceInDown delay-0s" id="jumbo2">
-                    <h2>
-                        <strong>This Week's Top Projected Players</strong>
-                    </h2>
-                    <h3>
-                        <strong>Quarterback</strong>
-                    </h3>
+
+                    <h2><strong>This Week's Top Projected Players</strong></h2>
+
+                    <h3><strong>Quarterback</strong></h3>
                     <div class="qb"></div>
-                    <h3>
-                        <strong>Runningback</strong>
-                    </h3>
+
+                    <h3><strong>Runningback</strong></h3>
                     <div class="rb"></div>
-                    <h3>
-                        <strong>Wide Receiver</strong>
-                    </h3>
+
+                    <h3><strong>Wide Receiver</strong></h3>
                     <div class="wr"></div>
-                    <h3>
-                        <strong>Tight End</strong>
-                    </h3>
+
+                    <h3><strong>Tight End</strong></h3>
                     <div class="te"></div>
-                    <h3>
-                        <strong>Kicker</strong>
-                    </h3>
+
+                    <h3><strong>Kicker</strong></h3>
                     <div class="k"></div>
-                    <h3>
-                        <strong>Defense</strong>
-                    </h3>
+
+                    <h3><strong>Defense</strong></h3>
                     <div class="def"></div>
                 </div>
-            </div>
+            </div> <!--Jumbotron 2-->
 
             <div class="col-sm-4">
                 <div class="jumbotron animated bounceInDown delay-0s" id="jumbo3">
-                    <h2>
-                        NFL Schedule</h2>
+
+                    <h2>NFL Schedule</h2>
+
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-8">
@@ -109,29 +104,25 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <button id="go" type="button" type="submit">Search</button>
+                                <button id="go" type="button">Search</button>
                             </div>
                         </div>
                     </div>
                     <ul id="schedule"></ul>
                     <div class="start"></div>
-                    <div class="away-team"></div>
-                    <div class="home-team"></div>
                 </div>
-            </div>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/javascript/projection.js"></script>
-        <script src="assets/javascript/schedule.js"></script>
-        <script src="assets/javascript/searchcolumn.js"></script>
-    </div>
+            </div> <!--Jumbotron 3-->
 
-    <!--Container-->
+        </div> <!--Row-->
+
+    </div> <!--Container-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/projection.js"></script>
     <script src="assets/javascript/schedule.js"></script>
-    <script src="searchcolumn.js"></script>
+    <script src="assets/javascript/searchcolumn.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 </body>
 
 </html>
