@@ -20,7 +20,7 @@ function getSchedule() {
             for (i = 0; i < response.games.length; i++) {
                 var starttime = response.games[i].schedule.startTime;
                 starttime = moment(starttime).format("llll");
-                $(".start").prepend("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " ........... " + starttime + "</p>");
+                $(".start").append("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " ........... " + starttime + "</p>");
             }
 
         },

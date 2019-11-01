@@ -1,5 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
     background: url("../images/field.jpg");
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -166,4 +173,11 @@ h2 {
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: 1;
+}
+
+.card-footer {
+    text-align: center;
+    background-color: darkslategray;
+    color: #ffffff;
+    height: auto;
 }
