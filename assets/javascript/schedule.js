@@ -14,15 +14,13 @@ function getSchedule() {
             "Authorization": "Basic " + btoa("272d68e4-cc86-4387-8a1e-35c762" + ":" + "MYSPORTSFEEDS")
         },
         timeout: 2000,
-        success: function(response, textStatus) {
+        success: function(response) {
             console.log(response);
             console.log("SUCCESS")
-                // var gameTime = response.games[i].schedule.startTime
             for (i = 0; i < response.games.length; i++) {
                 var starttime = response.games[i].schedule.startTime;
                 starttime = moment(starttime).format("llll");
-                $(".start").append("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " " + " " + " ........................  " + starttime + "</p>");
-                // $(".away-team").prepend("<p>" + response.games[i].schedule.awayTeam.abbreviation + "</p>");
+                $(".start").prepend("<p>" + response.games[i].schedule.awayTeam.abbreviation + " at " + response.games[i].schedule.homeTeam.abbreviation + " ........... " + starttime + "</p>");
             }
 
         },
@@ -34,5 +32,6 @@ function getSchedule() {
 
 var toggle = $("#go");
 toggle.on("click", function() {
+    $(".start").empty();
     getSchedule();
 });
