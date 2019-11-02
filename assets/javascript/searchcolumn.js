@@ -18,14 +18,15 @@ $("#select-player").on("click", function() {
                 console.log("i'm in the if statement");
                 playerName = response.players[i].name;
                 console.log(response.players[i].position);
-
-                $(".myAnimate").prepend("<h3>" + "Points Scored this Season: " + response.players[i].seasonPts + "</h3>");
-                $(".myAnimate").prepend("<h3>" + "Season Projected Points: " + response.players[i].seasonProjectedPts + "</h3>"); 
-                $(".myAnimate").prepend("<h3>" + "Weekly Projected Points: " + response.players[i].weekProjectedPts + "</h3>");
-                $(".myAnimate").prepend("<h3>" + "Team: " + response.players[i].teamAbbr + "</h3>");
-                $(".myAnimate").prepend("<h3>" + "Position: " + response.players[i].position + "</h3>");
-                $(".myAnimate").prepend("<h3>" + "<strong>" + response.players[i].name + "<strong>" + "</h3>");
-          
+                var newDiv = $("<div>").addClass("playerDiv");
+                $(".playerDiv").css("border-bottom", "1px-solid");
+                $(newDiv).prepend("<h3>" + "Points Scored this Season: " + response.players[i].seasonPts + "</h3>");
+                $(newDiv).prepend("<h3>" + "Season Projected Points: " + response.players[i].seasonProjectedPts + "</h3>"); 
+                $(newDiv).prepend("<h3>" + "Weekly Projected Points: " + response.players[i].weekProjectedPts + "</h3>");
+                $(newDiv).prepend("<h3>" + "Team: " + response.players[i].teamAbbr + "</h3>");
+                $(newDiv).prepend("<h3>" + "Position: " + response.players[i].position + "</h3>");
+                $(newDiv).prepend("<h3>" + "<strong>" + response.players[i].name + "<strong>" + "</h3>");
+                $(".myAnimate").prepend(newDiv)
             }
         }
 

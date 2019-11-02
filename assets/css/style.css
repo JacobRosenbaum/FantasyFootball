@@ -162,6 +162,7 @@ h2 {
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: 1;
+    border-bottom: 1px solid;
 }
 
 .jumbotron {
