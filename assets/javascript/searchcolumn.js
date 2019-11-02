@@ -1,5 +1,5 @@
 $("#select-player").on("click", function() {
-    event.preventDefault();
+
 
     var playerName = $("#player-search").val().trim();
 
