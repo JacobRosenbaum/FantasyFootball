@@ -1,4 +1,4 @@
-# project01: Fantasy Football Database
+# Fantasy Football Database #
 
 Contributors: Kyle Betlach, Mai Xiong, Jacob Rosenbaum, Hamza Abdikarim
 
