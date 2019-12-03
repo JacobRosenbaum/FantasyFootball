@@ -2,7 +2,7 @@
 
 Contributors: Kyle Betlach, Mai Xiong, Jacob Rosenbaum, Hamza Abdikarim
 
-##Introduction
+### Introduction
 
 For project01, we were tasked with creating an application with the following requirements: 
 
@@ -16,17 +16,17 @@ For project01, we were tasked with creating an application with the following re
 
 We chose to create a page that displays the highest projected point earners by position in NFL fantasy football, as well as have a player search function and interactive NFL schedule feature.
 
-###Technologies
+### Technologies
 
 The program was created in VS Code using html, css, Bootstrap, and JavaScript / jQuery.
 
 APIs used include the fantasy football API for the points and player search features, and MySportsFeeds API for the NFL schedule. Animation CSS was used as the third party library. Font Awesome and moment.js were also included for fonts and formatting the time in the NFL schedule display.
 
-####Launch
+### Launch
 
 Nothing too fancy! Simply open it up with your favorite web browser to view it!
 
-#####Status
+### Status
 
 The application has met and is beyond a "minimum viable product" status, as early users are able to view and interact with all 3 intended features (projected points, player search, NFL schedule).
 
@@ -40,7 +40,7 @@ The following features were brainstormed as things the group would like to inclu
 
 - A more in-depth schedule function that also includes team logos, records, stadium info, etc. 
 
-######Sources and Inspiration
+### Sources and Inspiration
 
 We wanted to create a simple page that provides fantasy football players with basic, but crucial information.
 
